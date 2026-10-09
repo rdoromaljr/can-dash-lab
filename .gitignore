@@ -1,0 +1,25 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Lab artifacts - students generate these
+logs/*.jsonl
+logs/*.log
+*.candump
+candump-*.log
+/tmp/
+
+# Screenshots are committed (docs/img), scratch renders are not
+/cluster*.png
+/panel*.png
+/states*.png
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

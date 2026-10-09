@@ -1,0 +1,590 @@
+[
+  {
+    "name": "mercedes_benz_e350_2010",
+    "dbc": "mercedes_benz_e350_2010.dbc",
+    "score": 11,
+    "messages": 16,
+    "coverage": [
+      "brake",
+      "door_fl",
+      "door_fr",
+      "door_rl",
+      "door_rr",
+      "doors",
+      "gear",
+      "seatbelt",
+      "speed",
+      "turn_left",
+      "turn_right"
+    ]
+  },
+  {
+    "name": "toyota_prius_2010_pt",
+    "dbc": "toyota_prius_2010_pt.dbc",
+    "score": 10,
+    "messages": 26,
+    "coverage": [
+      "brake",
+      "door_fl",
+      "door_fr",
+      "door_rl",
+      "door_rr",
+      "doors",
+      "gear",
+      "rpm",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "chrysler_cusw",
+    "dbc": "chrysler_cusw.dbc",
+    "score": 9,
+    "messages": 26,
+    "coverage": [
+      "brake",
+      "door_fl",
+      "door_fr",
+      "door_rl",
+      "door_rr",
+      "doors",
+      "gear",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "tesla_can",
+    "dbc": "tesla_can.dbc",
+    "score": 9,
+    "messages": 44,
+    "coverage": [
+      "brake",
+      "door_fl",
+      "door_fr",
+      "door_rl",
+      "door_rr",
+      "doors",
+      "gear",
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "byd_atto3",
+    "dbc": "byd_atto3.dbc",
+    "score": 7,
+    "messages": 14,
+    "coverage": [
+      "brake",
+      "doors",
+      "gear",
+      "seatbelt",
+      "speed",
+      "turn_left",
+      "turn_right"
+    ]
+  },
+  {
+    "name": "fca_giorgio",
+    "dbc": "fca_giorgio.dbc",
+    "score": 5,
+    "messages": 37,
+    "coverage": [
+      "brake",
+      "rpm",
+      "speed",
+      "turn_left",
+      "turn_right"
+    ]
+  },
+  {
+    "name": "ford_cgea1_2_bodycan_2011",
+    "dbc": "ford_cgea1_2_bodycan_2011.dbc",
+    "score": 5,
+    "messages": 102,
+    "coverage": [
+      "door_fl",
+      "doors",
+      "fuel",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "ford_fusion_2018_pt",
+    "dbc": "ford_fusion_2018_pt.dbc",
+    "score": 5,
+    "messages": 14,
+    "coverage": [
+      "brake",
+      "doors",
+      "speed",
+      "turn_left",
+      "turn_right"
+    ]
+  },
+  {
+    "name": "gm_global_a_lowspeed_1818125",
+    "dbc": "gm_global_a_lowspeed_1818125.dbc",
+    "score": 5,
+    "messages": 367,
+    "coverage": [
+      "doors",
+      "fuel",
+      "gear",
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "hongqi_hs5",
+    "dbc": "hongqi_hs5.dbc",
+    "score": 5,
+    "messages": 16,
+    "coverage": [
+      "brake",
+      "rpm",
+      "speed",
+      "turn_left",
+      "turn_right"
+    ]
+  },
+  {
+    "name": "hyundai_2015_ccan",
+    "dbc": "hyundai_2015_ccan.dbc",
+    "score": 5,
+    "messages": 113,
+    "coverage": [
+      "doors",
+      "fuel",
+      "rpm",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "toyota_iQ_2009_can",
+    "dbc": "toyota_iQ_2009_can.dbc",
+    "score": 5,
+    "messages": 26,
+    "coverage": [
+      "doors",
+      "fuel",
+      "rpm",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "cadillac_ct6_powertrain",
+    "dbc": "cadillac_ct6_powertrain.dbc",
+    "score": 4,
+    "messages": 35,
+    "coverage": [
+      "doors",
+      "rpm",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "ford_cgea1_2_ptcan_2011",
+    "dbc": "ford_cgea1_2_ptcan_2011.dbc",
+    "score": 4,
+    "messages": 143,
+    "coverage": [
+      "doors",
+      "fuel",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "ford_lincoln_base_pt",
+    "dbc": "ford_lincoln_base_pt.dbc",
+    "score": 4,
+    "messages": 331,
+    "coverage": [
+      "fuel",
+      "gear",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "hyundai_i30_2014",
+    "dbc": "hyundai_i30_2014.dbc",
+    "score": 4,
+    "messages": 32,
+    "coverage": [
+      "fuel",
+      "rpm",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "luxgen_s5_2015",
+    "dbc": "luxgen_s5_2015.dbc",
+    "score": 4,
+    "messages": 21,
+    "coverage": [
+      "doors",
+      "gear",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "mazda_3_2019",
+    "dbc": "mazda_3_2019.dbc",
+    "score": 4,
+    "messages": 59,
+    "coverage": [
+      "brake",
+      "gear",
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "tesla_model3_vehicle",
+    "dbc": "tesla_model3_vehicle.dbc",
+    "score": 4,
+    "messages": 11,
+    "coverage": [
+      "gear",
+      "speed",
+      "turn_left",
+      "turn_right"
+    ]
+  },
+  {
+    "name": "volvo_v60_2015_pt",
+    "dbc": "volvo_v60_2015_pt.dbc",
+    "score": 4,
+    "messages": 41,
+    "coverage": [
+      "brake",
+      "doors",
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "vw_mqbevo",
+    "dbc": "vw_mqbevo.dbc",
+    "score": 4,
+    "messages": 136,
+    "coverage": [
+      "fuel",
+      "speed",
+      "turn_left",
+      "turn_right"
+    ]
+  },
+  {
+    "name": "gm_global_a_lowspeed",
+    "dbc": "gm_global_a_lowspeed.dbc",
+    "score": 3,
+    "messages": 13,
+    "coverage": [
+      "doors",
+      "gear",
+      "speed"
+    ]
+  },
+  {
+    "name": "hyundai_2015_mcan",
+    "dbc": "hyundai_2015_mcan.dbc",
+    "score": 3,
+    "messages": 170,
+    "coverage": [
+      "doors",
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "hyundai_santafe_2007",
+    "dbc": "hyundai_santafe_2007.dbc",
+    "score": 3,
+    "messages": 13,
+    "coverage": [
+      "gear",
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "mazda_rx8",
+    "dbc": "mazda_rx8.dbc",
+    "score": 3,
+    "messages": 7,
+    "coverage": [
+      "fuel",
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "opel_omega_2001",
+    "dbc": "opel_omega_2001.dbc",
+    "score": 3,
+    "messages": 11,
+    "coverage": [
+      "gear",
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "rivian_primary_actuator",
+    "dbc": "rivian_primary_actuator.dbc",
+    "score": 3,
+    "messages": 67,
+    "coverage": [
+      "doors",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "tesla_model3_party",
+    "dbc": "tesla_model3_party.dbc",
+    "score": 3,
+    "messages": 21,
+    "coverage": [
+      "doors",
+      "gear",
+      "speed"
+    ]
+  },
+  {
+    "name": "tesla_powertrain",
+    "dbc": "tesla_powertrain.dbc",
+    "score": 3,
+    "messages": 6,
+    "coverage": [
+      "gear",
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "volvo_v40_2017_pt",
+    "dbc": "volvo_v40_2017_pt.dbc",
+    "score": 3,
+    "messages": 51,
+    "coverage": [
+      "gear",
+      "seatbelt",
+      "speed"
+    ]
+  },
+  {
+    "name": "vw_mqb",
+    "dbc": "vw_mqb.dbc",
+    "score": 3,
+    "messages": 113,
+    "coverage": [
+      "fuel",
+      "turn_left",
+      "turn_right"
+    ]
+  },
+  {
+    "name": "bmw_e9x_e8x",
+    "dbc": "bmw_e9x_e8x.dbc",
+    "score": 2,
+    "messages": 326,
+    "coverage": [
+      "brake",
+      "speed"
+    ]
+  },
+  {
+    "name": "cadillac_ct6_object",
+    "dbc": "cadillac_ct6_object.dbc",
+    "score": 2,
+    "messages": 294,
+    "coverage": [
+      "doors",
+      "speed"
+    ]
+  },
+  {
+    "name": "gwm_haval_h6_phev_2024",
+    "dbc": "gwm_haval_h6_phev_2024.dbc",
+    "score": 2,
+    "messages": 27,
+    "coverage": [
+      "doors",
+      "speed"
+    ]
+  },
+  {
+    "name": "mg",
+    "dbc": "mg.dbc",
+    "score": 2,
+    "messages": 18,
+    "coverage": [
+      "doors",
+      "speed"
+    ]
+  },
+  {
+    "name": "nissan_xterra_2011",
+    "dbc": "nissan_xterra_2011.dbc",
+    "score": 2,
+    "messages": 15,
+    "coverage": [
+      "rpm",
+      "speed"
+    ]
+  },
+  {
+    "name": "vw_mlb",
+    "dbc": "vw_mlb.dbc",
+    "score": 2,
+    "messages": 145,
+    "coverage": [
+      "turn_left",
+      "turn_right"
+    ]
+  },
+  {
+    "name": "ESR",
+    "dbc": "ESR.dbc",
+    "score": 1,
+    "messages": 80,
+    "coverage": [
+      "speed"
+    ]
+  },
+  {
+    "name": "acura_ilx_2016_nidec",
+    "dbc": "acura_ilx_2016_nidec.dbc",
+    "score": 1,
+    "messages": 36,
+    "coverage": [
+      "speed"
+    ]
+  },
+  {
+    "name": "cadillac_ct6_chassis",
+    "dbc": "cadillac_ct6_chassis.dbc",
+    "score": 1,
+    "messages": 6,
+    "coverage": [
+      "speed"
+    ]
+  },
+  {
+    "name": "chrysler_pacifica_2017_hybrid_private_fusion",
+    "dbc": "chrysler_pacifica_2017_hybrid_private_fusion.dbc",
+    "score": 1,
+    "messages": 31,
+    "coverage": [
+      "speed"
+    ]
+  },
+  {
+    "name": "gm_global_a_object",
+    "dbc": "gm_global_a_object.dbc",
+    "score": 1,
+    "messages": 59,
+    "coverage": [
+      "speed"
+    ]
+  },
+  {
+    "name": "toyota_adas",
+    "dbc": "toyota_adas.dbc",
+    "score": 1,
+    "messages": 33,
+    "coverage": [
+      "speed"
+    ]
+  },
+  {
+    "name": "toyota_tss2_adas",
+    "dbc": "toyota_tss2_adas.dbc",
+    "score": 1,
+    "messages": 35,
+    "coverage": [
+      "speed"
+    ]
+  },
+  {
+    "name": "FORD_CADS",
+    "dbc": "FORD_CADS.dbc",
+    "score": 0,
+    "messages": 80,
+    "coverage": []
+  },
+  {
+    "name": "FORD_CADS_64",
+    "dbc": "FORD_CADS_64.dbc",
+    "score": 0,
+    "messages": 80,
+    "coverage": []
+  },
+  {
+    "name": "comma_body",
+    "dbc": "comma_body.dbc",
+    "score": 0,
+    "messages": 14,
+    "coverage": []
+  },
+  {
+    "name": "ford_fusion_2018_adas",
+    "dbc": "ford_fusion_2018_adas.dbc",
+    "score": 0,
+    "messages": 64,
+    "coverage": []
+  },
+  {
+    "name": "gm_global_a_chassis",
+    "dbc": "gm_global_a_chassis.dbc",
+    "score": 0,
+    "messages": 4,
+    "coverage": []
+  },
+  {
+    "name": "gm_global_a_high_voltage_management",
+    "dbc": "gm_global_a_high_voltage_management.dbc",
+    "score": 0,
+    "messages": 12,
+    "coverage": []
+  },
+  {
+    "name": "gm_global_a_powertrain_expansion",
+    "dbc": "gm_global_a_powertrain_expansion.dbc",
+    "score": 0,
+    "messages": 2,
+    "coverage": []
+  },
+  {
+    "name": "mazda_radar",
+    "dbc": "mazda_radar.dbc",
+    "score": 0,
+    "messages": 9,
+    "coverage": []
+  },
+  {
+    "name": "rivian_park_assist_can",
+    "dbc": "rivian_park_assist_can.dbc",
+    "score": 0,
+    "messages": 2,
+    "coverage": []
+  },
+  {
+    "name": "vw_pq",
+    "dbc": "vw_pq.dbc",
+    "score": 0,
+    "messages": 86,
+    "coverage": []
+  }
+]

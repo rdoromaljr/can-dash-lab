@@ -1,0 +1,67 @@
+{
+  "name": "gm_global_a_lowspeed",
+  "dbc": "gm_global_a_lowspeed.dbc",
+  "messages": 13,
+  "channels": {
+    "speed": {
+      "message": "VehicleSpeed",
+      "frame_id": 270598144,
+      "is_extended": true,
+      "dlc": 8,
+      "signal": "VehicleSpeed1",
+      "start_bit": 7,
+      "length": 16,
+      "byte_order": "big_endian",
+      "is_signed": false,
+      "scale": 0.01,
+      "offset": 0.0,
+      "unit": "mph",
+      "to_kmh": 1.609344,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "gear": {
+      "message": "GearShifter",
+      "frame_id": 271368192,
+      "is_extended": true,
+      "dlc": 8,
+      "signal": "GearShifter",
+      "start_bit": 17,
+      "length": 2,
+      "byte_order": "big_endian",
+      "is_signed": false,
+      "scale": 1.0,
+      "offset": 0.0,
+      "unit": "",
+      "to_kmh": 1.0,
+      "min": 0.0,
+      "max": 3.0
+    },
+    "doors": {
+      "message": "DriverDoorStatus",
+      "frame_id": 274923520,
+      "is_extended": true,
+      "dlc": 1,
+      "signal": "DriverDoorOpened",
+      "start_bit": 0,
+      "length": 1,
+      "byte_order": "big_endian",
+      "is_signed": false,
+      "scale": 1.0,
+      "offset": 0.0,
+      "unit": "",
+      "to_kmh": 1.0,
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "lamps": {},
+  "coverage": [
+    "doors",
+    "gear",
+    "speed"
+  ],
+  "score": 3,
+  "patched_ext_ids": true,
+  "noise_ids": []
+}

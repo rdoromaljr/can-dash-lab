@@ -1,0 +1,5 @@
+# CAN dashboard simulator
+python-can>=4.0      # bus abstraction (socketcan, udp_multicast, virtual)
+cantools>=39         # DBC parsing - used by mine_dbc.py / verify only
+pygame>=2.5          # cluster + control panel rendering
+msgpack>=1.0         # REQUIRED by python-can's udp_multicast ("-i udp") bus
