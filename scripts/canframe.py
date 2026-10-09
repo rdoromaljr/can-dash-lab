@@ -7,7 +7,7 @@ Implements both bit orderings used in DBC files:
   big_endian    ("Motorola", @0) - start bit is the MSB, sawtooth layout
 
 Keeping this standalone (no cantools at runtime) means the simulator and the
-dashboard stay light and the student can read exactly how a CAN signal is
+dashboard stay light and you can read exactly how a CAN signal is
 laid out inside 8 bytes.
 """
 

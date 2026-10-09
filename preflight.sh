@@ -103,6 +103,6 @@ elif [ "$WARN" -gt 0 ]; then
     echo "  Usable, but read the [WARN] lines - some exercises may be blocked."
     exit 0
 else
-    echo "  Ready. Next:  ./run.sh     then see CARINGCARIBOU_LAB.md"
+    echo "  Ready. Next:  ./run.sh     then see the README"
     exit 0
 fi

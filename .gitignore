@@ -18,6 +18,12 @@ candump-*.log
 /panel*.png
 /states*.png
 
+# Private seminar material - kept out of the public repo on purpose
+CARINGCARIBOU_LAB.md
+CHALLENGES.md
+seminar/
+private/
+
 # Editors / OS
 .vscode/
 .idea/

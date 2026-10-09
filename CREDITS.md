@@ -52,8 +52,8 @@ It contains none.
 are comma.ai's, redistributed unmodified. They are the result of an enormous
 community reverse-engineering effort across dozens of manufacturers.
 
-Without them, every CAN ID in this lab would be made up, and students would
-learn a fictional protocol. Because of them:
+Without them, every CAN ID in this lab would be made up, and you would be
+learning a fictional protocol. Because of them:
 
 - `0x0B4` really is where a 2010 Prius reports speed
 - `SPEED.SPEED` really is 16 bits, big-endian, start bit 47, scaled 0.0062 mph
@@ -77,11 +77,10 @@ channels it can populate. The DBC files themselves are untouched.
 **https://github.com/CaringCaribou/caringcaribou** — GPL-3.0
 
 The attack toolchain this lab is designed around. `listener`, `dump`, `send`,
-`fuzzer`, and `uds` are the tools students actually drive in
-[`CARINGCARIBOU_LAB.md`](CARINGCARIBOU_LAB.md).
+`fuzzer`, and `uds` are the tools this simulator is built to be attacked with.
 
-CaringCaribou is **not** bundled, vendored, or modified here — students install
-it separately and point it at this simulator's virtual bus. This repository is a
+CaringCaribou is **not** bundled, vendored, or modified here — you install it
+separately and point it at this simulator's virtual bus. This repository is a
 *target* for it, not a derivative of it, so its GPL-3.0 does not extend to this
 project.
 

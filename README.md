@@ -33,14 +33,24 @@ which is the most valuable property this lab has.
 Full attribution, including exactly what was and was not taken from each
 project: **[CREDITS.md](CREDITS.md)**.
 
-### Teaching with this
+### What you can learn here
 
-- **[`CARINGCARIBOU_LAB.md`](CARINGCARIBOU_LAB.md)** — a 10-exercise, ~2.5 hour
-  instructor-led lab sheet. Recon → correlation → injection → arbitration →
-  replay → fuzzing → diagnostics → DoS → a forged-drive-cycle capstone. Every
-  frame in it is verified against `cantools`.
-- **[`CHALLENGES.md`](CHALLENGES.md)** — 10 self-paced graded challenges for
-  students working alone.
+Everything below runs against a virtual bus on your own machine:
+
+- **Reconnaissance** — inventory an unknown bus, rank IDs by activity
+- **Signal correlation** — work out which arbitration ID carries speed, doors,
+  or gear, without being told
+- **Injection** — craft a frame by hand from a DBC bit layout and watch the
+  cluster believe it
+- **Arbitration** — hold a spoofed value against a real ECU still transmitting
+  the truth 50x/sec
+- **Replay** — capture a drive and play it back with no vehicle attached
+- **Fuzzing** — targeted vs. random, and why random disappoints
+- **Denial of service** — why the lowest arbitration ID always wins
+
+The cluster is a **passive listener** with no link to the simulator other than
+the bus. That is the whole point: CAN has no authentication, so a frame you
+inject is indistinguishable from the real ECU's.
 
 ```
   ┌────────────┐   real CAN frames    ┌──────────────────┐
@@ -242,18 +252,46 @@ when it misses.
 
 ---
 
-## Exercises
+## Try it yourself
 
-See `CHALLENGES.md` — eight graded tasks from "find the speed ID" to
-"forge a full drive cycle without touching the simulator".
+Work these in order. Each one builds on the last, and none of them tell you the
+answer up front — that is the exercise.
+
+1. **Inventory the bus.** `caringcaribou -i vcan0 listener`. How many unique IDs?
+   Which ones are fastest, and why would an ECU send speed more often than door
+   state?
+2. **Find the speed ID without being told.** Run `attack.py diff` while holding
+   throttle. Then press `N` to kill the background noise and try again — notice
+   how much easier that made it, and consider what a real 2000 frame/sec bus
+   would be like.
+3. **Light a warning lamp.** One injected frame. Then all eight at once.
+4. **Hand-craft a speed frame.** Read the bit layout from `targets.py`, do the
+   arithmetic yourself, and make the needle read 150 km/h.
+5. **Beat the real ECU.** A single frame flickers because the simulator
+   overwrites it 50x/sec. Make the lie stick.
+6. **Replay a drive.** Capture traffic, stop the simulator, and make the cluster
+   show a full drive cycle with no car attached.
+7. **Fuzz with intent.** Compare `fuzzer random` against
+   `fuzzer brute 0x024 ..00000000000000`. Work out the odds of random fuzzing
+   hitting a specific ID, then decide which approach deserves your time.
+8. **Starve the bus.** `attack.py dos --id 0x000`. Why does `0x000` work better
+   than `0x7FF`? Can this be patched?
+9. **Forge a complete drive cycle.** Simulator off, cluster only. Accelerate
+   0 → 120 km/h with plausible RPM, shift P → D → P, trigger CHECK ENGINE
+   halfway, end stationary in Park. Then answer: which single defensive control
+   would have stopped every exercise on this list?
+
+`./.venv/bin/python scripts/targets.py <car>` prints the IDs, bit layouts, and
+ready-to-paste frames for whichever vehicle you picked.
 
 ---
 
 ## How it works
 
 ```
-ICSIM/
+can-dash-lab/
 ├── setup.sh               build venv, install deps, mine profiles
+├── preflight.sh           check every tool, name what is missing
 ├── requirements.txt       python-can, cantools, pygame, msgpack
 ├── run.sh                 launch cluster + controls
 ├── setup_vcan.sh          create vcan0 (needs sudo)
@@ -268,6 +306,7 @@ ICSIM/
     ├── dash.py            the cluster (listens only)
     ├── ui.py              pygame drawing
     ├── attack.py          sniff/diff/spoof/replay/fuzz/dos
+    ├── targets.py         what reacts on this car, with paste-ready frames
     └── shot.py            offscreen render for docs
 ```
 
