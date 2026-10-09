@@ -14,10 +14,24 @@ with [caringcaribou](https://github.com/CaringCaribou/caringcaribou),
 *The cluster mid-attack: spoofed speed, every warning lamp lit by injection, and
 a live `INJECTION DETECTED` feed naming the rogue arbitration IDs.*
 
-Inspired by [ICSim](https://github.com/zombieCraig/ICSim), but the CAN IDs and
-bit layouts are **not invented**: they are mined directly from
-[commaai/opendbc](https://github.com/commaai/opendbc), so when you learn that
-the Prius reports speed on `0x0B4`, that is the real ID a real Prius uses.
+### Standing on other people's work
+
+This exists because of **[ICSim](https://github.com/zombieCraig/ICSim)** by
+Craig Smith (@zombieCraig) — the original instrument cluster simulator, and the
+project that taught everyone that CAN attacks can be learned on a laptop with no
+car and no budget. The entire teaching approach here is his. Read his book,
+*The Car Hacker's Handbook*. **No ICSim code is reused here** — ICSim is C/SDL,
+this is Python/pygame, written from scratch. The debt is conceptual, and it is
+large.
+
+The CAN IDs and bit layouts are **not invented**: all 58 DBC files are
+redistributed unmodified from **[commaai/opendbc](https://github.com/commaai/opendbc)**.
+That community reverse-engineering effort is why `0x0B4` really is where a 2010
+Prius reports speed — and why switching cars changes every ID and bit offset,
+which is the most valuable property this lab has.
+
+Full attribution, including exactly what was and was not taken from each
+project: **[CREDITS.md](CREDITS.md)**.
 
 ### Teaching with this
 
@@ -49,7 +63,7 @@ you inject is indistinguishable from the real ECU's frame.
 ## Quick start
 
 ```bash
-git clone https://github.com/<YOUR_USER>/can-dash-lab.git
+git clone https://github.com/rdoromaljr/can-dash-lab.git
 cd can-dash-lab
 ./setup.sh                      # venv + deps + mine profiles (safe to re-run)
 
@@ -300,4 +314,8 @@ Comma.ai Inc., also MIT licensed. See [`dbc/NOTICE.md`](dbc/NOTICE.md).
 
 Conceptually indebted to [ICSim](https://github.com/zombieCraig/ICSim) by Craig
 Smith, and built to be attacked with
-[CaringCaribou](https://github.com/CaringCaribou/caringcaribou).
+[CaringCaribou](https://github.com/CaringCaribou/caringcaribou). ICSim and
+CaringCaribou are both GPL-3.0; neither has any code reused or bundled here, so
+their copyleft does not extend to this project. The distinction matters, and
+[CREDITS.md](CREDITS.md) spells out precisely what was and was not taken from
+each project.
