@@ -1,4 +1,13 @@
-# CAN dashboard simulator
+# CAN dashboard simulator - Python dependencies
+#
+# NOTE: this file covers Python only. The lab also needs two things pip
+# cannot install:
+#
+#     sudo apt install can-utils      # candump, cansend, cangen
+#     pipx install caringcaribou      # the attack tool
+#
+# Run ./preflight.sh to check everything at once.
+
 python-can>=4.0      # bus abstraction (socketcan, udp_multicast, virtual)
 cantools>=39         # DBC parsing - used by mine_dbc.py / verify only
 pygame>=2.5          # cluster + control panel rendering

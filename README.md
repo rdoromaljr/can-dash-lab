@@ -62,10 +62,31 @@ you inject is indistinguishable from the real ECU's frame.
 
 ## Quick start
 
+### Prerequisites
+
+`requirements.txt` covers the Python side only. The lab also needs two things
+pip cannot install:
+
+```bash
+# Debian / Ubuntu / Kali
+sudo apt install python3-venv can-utils
+pipx install caringcaribou          # or: pip install --user caringcaribou
+```
+
+- **`can-utils`** — `candump`, `cansend`, `cangen`. Ships `vcan` support.
+- **`caringcaribou`** — the attack tool the lab is built around.
+- Kali has both preinstalled. Most other distros have neither.
+
+Then run **`./preflight.sh`** at any time to check everything and get the exact
+install command for whatever is missing.
+
+### Install
+
 ```bash
 git clone https://github.com/rdoromaljr/can-dash-lab.git
 cd can-dash-lab
 ./setup.sh                      # venv + deps + mine profiles (safe to re-run)
+./preflight.sh                  # verify tooling before you teach
 
 # Option A - realistic (socketcan, works with candump/caringcaribou)
 sudo ./setup_vcan.sh            # once per boot
